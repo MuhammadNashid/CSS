@@ -1,0 +1,19 @@
+#a1{
+    color: goldenrod;
+}
+
+h2{
+    color: greenyellow;
+}
+
+h1{
+    color: rgb(32, 11, 32);
+}
+
+.a2{
+    color: burlywood;
+}
+
+.a2,#a1,p,h1{
+    background-color: darkred;
+}
