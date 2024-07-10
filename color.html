@@ -12,9 +12,12 @@
             margin: 100px 40px 80px;
             padding: 25px 30px;
             text-align: center;
-            text-decoration: underline  black 3px;
+            text-decoration: underline  rgb(179, 162, 162) 3px;
             text-decoration-thickness: underline;
             text-shadow: 2px 2px red;
+            font-family: cursive;
+            font-size: 80px;
+            
         }
         div{
             height: 100px;
@@ -25,6 +28,8 @@
             text-decoration-color: green;
             margin: 10px 50px;
             line-height: 20px;
+            font-family: cursive;
+            font-size: 20px;
         }
         p{
             text-align-last: center;
@@ -32,7 +37,128 @@
             text-indent: 20px;
             word-spacing: 2px;
             line-height: 20px;
+            font-family: cursive;
+
         }
+        h2{
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        table,th,td{
+            border: 2px solid rgb(107, 98, 98);
+            border-collapse: collapse;
+            width: 1000px;
+            color: white;
+            background-color: darkblue;
+            padding: 10px;
+            margin: 20px 50px;    
+        }
+        li{
+            background-color: white;
+            display: inline;
+        }
+        li{ 
+            background-color: beige;
+            visibility: hidden;
+        } 
+         .main{
+            width: 400px;
+            height: 400px;
+            background-color:red;
+         }
+         .sub{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: relative;
+            top: 100px;
+            left: 50px;   
+         } 
+         .main1{
+
+            width: 400px;
+            height: 400px;
+            background-color:red;
+        }
+        .sub1{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            position: relative;
+            top: 100px;
+            left: 50px;   
+         } 
+         .sub2{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            position: relative;
+            top: 50px;
+            left: 25px;   
+         }
+
+
+         .main2{
+            width: 500px;
+            height: 500px;
+            background-color: blue;
+         }
+         .sub3{
+            width: 300px;
+            height: 300px;
+            background-color: black;
+            position: relative;
+            right: 50px;
+            bottom: 10px;
+         }
+         .sub4{
+            width: 300px;
+            height: 300px;
+            background-color: yellow ;
+            position: relative;
+            top: 100px;
+            left: 300px;
+            right: 50px;
+            bottom: 0px;   
+         }
+         .container{
+            position: relative;
+         }
+         .topleft{
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            font-size: 17px;
+         }
+         .img{
+            width: 100px;
+            height: auto;
+            opacity: 0.3;
+         }
+         .topright{
+            position: absolute;
+            bottom: 50px;
+            left: 900px;
+            font-size: 17px;
+         }
+         .centered{
+            position: absolute;
+            left: 500px;
+            top: 100px;
+         }
+         .bottomleft{
+            position: absolute;
+            top: 280px;
+            bottom: 10px;
+         }
+         .bottomright{
+            position: absolute;
+            left: 900px;
+            top: 220px;
+            right: 50px;
+         }
+         
+
     </style>
 
 </head>
@@ -41,23 +167,110 @@
 <body style="background: rgb(46, 43, 43) url(istockphoto-1645602428-2048x2048.webp)  no-repeat ;background-size: 1000px 1000px; background-position: center; background-attachment: fixed">
 
     
-    <h1 style="color: rgb(rgb(115, 255, 0), green, blue);border:5px solid black; border-radius: 10px;">Welcome</h1>
-    <h1 style="color: rgba(rgba(107, 47, 47, 0.979), green, blue, alpha);border: 10px inset darkblue;border-radius: 20px;">Hello</h1>
-    <h1 style="color: rgb(110, 119, 103);">Hiiiiiii</h1>
+    <h1 style="color: rgb(rgb(115, 255, 0), green, blue);border:5px solid black; border-radius: 10px; ">Welcome</h1>
+    <!-- <h1 style="color: rgba(rgba(107, 47, 47, 0.979), green, blue, alpha);border: 10px inset darkblue;border-radius: 20px;">Hello</h1>
+    <h1 style="color: rgb(110, 119, 103);">Hiiiiiii</h1> -->
     
-    <div style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iure dignissimos amet voluptates aspernatur laboriosam eos, totam eaque veniam autem fugit dolor, ullam consequuntur cum. Omnis reprehenderit facere porro culpa?</div>
+    <!-- <div style="color: black; padding: 20px 20px 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iure dignissimos amet voluptates aspernatur laboriosam eos, totam eaque veniam autem fugit dolor, ullam consequuntur cum. Omnis reprehenderit facere porro culpa?</div> -->
     
     
 
 
 
 
-<h2 >Welcome </h2>
-<h2 id="a1">too</h2>
-<h2 class="a2">Synnefo</h2>
+<h2 style="color: black;border: 20px solid;">Welcome </h2>
+<!-- <h2 id="a1">too</h2> -->
+<!-- <h2 class="a2">Synnefo</h2> -->
 
 
 <p class="a2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque temporibus animi optio suscipit commodi perspiciatis nobis similique aliquam repellat facere maxime corporis necessitatibus ipsa sequi minus, consequuntur in, quam magni!</p>
+
+<table>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Savings</th>
+    </tr>
+    <tr>
+        <th>Peter</th>
+        <th>Giffin</th>
+        <th>$150</th>
+
+    </tr>
+    <tr>
+        <th>Lois</th>
+        <th>Giffin</th>
+        <th>$200</th>
+    </tr>
+    <tr>
+        <th>Joe</th>
+        <th>Sawson</th>
+        <th>$250</th>
+    </tr>
+    <tr>
+        <th>Cleveland</th>
+        <th>Brown</th>
+        <th>$300</th>
+    </tr>
+</table>
+<ul>
+    <li>This is Me</li>
+    <li class="hidden">This is paragraph</li>
+    <li>This is index</li>
+</ul>
+
+
+
+
+
+    <div class="main">
+     <div class="sub">
+
+        </div>
+    </div> 
+
+    <div class="main1">
+        <div class="sub1">
+            <div class="sub2">
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="main2">
+        <div class="sub3">
+            <div class="sub4">
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- <div class="container">
+        <img src="pexels-photo-268533.jpeg" alt="blured" width="1000" height="500">
+        <div class="topleft">Top Left</div>
+        <div class="topright">Top Right</div>
+        <div class="Centered">Centered</div>
+        <div class="bottomleft">Bottom Left</div>
+        <div class="bottomright">Bottom Right</div>
+
+
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
