@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    a2{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;  
+    }
+    p::first-line{
+        color: black;
+        font-variant: small-caps;
+    }
+    ::selection{
+        color: blue;
+        background-color: brown;
+    }
+    div.background{
+        background: url(pexels-photo-268533.jpeg);
+        border: 3px solid black;
+    }
+    div.transbox{
+        margin: 30px;
+        background-color: beige;
+        border: 1px solid black;
+        opacity: 0.6;
+    }
+    div.transbox p{
+         margin: 5%;
+         font-weight: lighter;
+         color: black;
+    }
+    ul{
+        list-style-type:none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: blue;
+        border: 1px solid black;
+    }
+    li a{
+        display: block;
+        color: green;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+    li {
+        text-align: center;
+        border-bottom: 1px solid #555;
+    }
+    li a.active {
+        background-color: #04AA6D;
+        color: white;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+    }
+</style>
+
+</head>
+<body>
+    
+<h2>Center an Image</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ad autem culpa corrupt.</p> <br><br><br>
+
+<img class="a2" src="pexels-photo-268533.jpeg"  width="200px" height="200px"> <br>
+
+<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+
+
+<h1>This Is A Paragraph</h1>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. recusandae voluptate quis vero.</p> <br><br><br>
+
+
+
+<div class="background">
+    <div class="transbox">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum reprehenderit, soluta nihil sint beatae ipsam ullam dolorum cupiditate optio aut, recusandae nisi.</p>
+    </div>
+</div>
+
+
+
+<h2>Vertical Navigation Bar</h2>
+<p>In this example, we center the navigation links and add a border to the navigation bar.</p>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+
+</body>
+</html>
