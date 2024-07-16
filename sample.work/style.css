@@ -40,3 +40,42 @@ img{
     text-align: center;
     opacity: 4;
 }
+form{
+    width: 50%;
+    height: 50%;
+    border: 2px solid brown;
+    margin: 8px;
+    padding: 12px 20px;
+}
+input[type=text]{
+    width: 30%;
+    padding:20px 12px;
+    margin: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+input[type=text]:hover{
+    background-color: aqua;
+}
+input[type=email]{
+    width: 30%;
+    padding:20px 12px;
+    margin: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+input[type=email]:hover{
+    background-color: grey;
+}
+textarea:hover{
+    background-color:aquamarine ;
+}
+input[type=submit]{
+    background-color: black;
+    padding: 15px 15px;
+    cursor: pointer;
+    color: whitesmoke;
+}
+input[type=submit]:hover{
+    background-color: chocolate;
+}
