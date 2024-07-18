@@ -44,7 +44,6 @@ div{
     flex-grow: 1;
 }
 .subdiv{
-    background-color: rgb(27, 12, 12);
     flex-wrap: wrap;
     flex-direction: column;
     display: flex;
@@ -62,7 +61,7 @@ div{
 }
 .subdiv2>div{
     margin: 2px;
-    /* border: 1px solid darkblue; */
+    border: 1px solid darkblue;
     flex-grow: 1;
     height: 50px;
 }
@@ -73,7 +72,11 @@ div{
 }
 .subdiv3>div{
     margin: 2px;
-    /* border: 1px solid darkblue; */
+    border: 1px solid darkblue;
     flex-grow: 1;
     height: 50px;
+}
+h1{
+    background-color: none;
+
 }
