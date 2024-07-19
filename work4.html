@@ -10,41 +10,89 @@
         .sub{grid-area: sub;}
         .img{grid-area: img;}
         .msg{grid-area: msg;}
+        .button{grid-area: button;}
 
     .main{
         display: grid;
         grid-template-areas: 
         'head head head head nav nav'
         'sub sub sub sub img img'
-        'msg msg msg msg img img';
-
+        'msg msg msg msg img img'
+        'button button button button img img';
+        grid-template-rows: 70px 300px 50px 100px;
+        width: 50%;
         background-color: lightblue;
         padding: 10px;
     }
     .head{
         background-color: grey;
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
     }
     .nav{
-        background-color: blueviolet;
+        background-color: blanchedalmond;
+        padding: 10px;
+        text-align: center;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav a{
+        text-decoration: none;
     }
     .sub{
         background-color: aquamarine;
+        font-size: 30px;
+        
     }
     .img{
         background-color: brown;
     }
     .msg{
         background-color: burlywood;
+        text-align: center;
+    }
+    .button{
+        background-color: khaki;
+        display: flex;
+        flex-direction: row;
+        font-size: 30px;
+        text-align: center;
+
+    }
+    .btn1{
+        background-color: aqua;
+        flex: 50%;
+        padding: 10px;
+
+    }
+    .btn2{
+        background-color: lightgreen;
+        flex: 50%;
+        padding: 10px;
     }
     </style>
 </head>
 <body>
     <div class="main">
-        <div class="head">head</div>
-        <div class="nav">nav</div>
-        <div class="sub">sub</div>
-        <div class="img">img</div>
-        <div class="msg">msg</div>
+        <div class="head">Web Dairy</div>
+        <div class="nav">
+            <a href="">Home</a><a href="">About</a><a href="">Contact</a>
+        </div>
+        <div class="sub"><h2>css grid example</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore tenetur reiciendis ab a aut sint consequatur reprehenderit debitis.</p>
+        </div>
+        <div class="img">
+            <img src="sky-8763986_640.jpg" alt="" width="300px" height="450px">
+        </div>
+        <div class="msg">
+            <h2>" Lorem ipsum dolor sit amet,"</h2>
+        </div>
+        <div class="button">
+            <div class="btn1">Read more</div>
+            <div class="btn2">View all</div>
+        </div>
     </div>
 </body>
 </html>
