@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(53, 18, 18);
+            color: whitesmoke;
+        }
+
+        .topnav{
+            background-color: aqua;
+            overflow: hidden;
+        }
+        .topnav a{
+            float: left;
+            display: block;
+            /* color: blueviolet; */
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .topnav a:hover{
+            background-color: blue;
+            color: grey;
+        }
+
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .column{
+            flex: 20%;
+            padding: 20px;
+        }
+        
+
+        @media screen and (max-width:600px) {
+            .topnav a{
+                float: none;
+                width: 100%;
+            }
+            
+        }
+        @media screen and (min-width:480px) and (max-width:800px){
+            body{
+                background-color: chartreuse;
+            }
+            
+        }
+
+        @media screen and (max-width:992px){
+            .column{
+                flex: 50%;
+            }
+        }
+        @media screen and (max-width:600px){
+            .row{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Nagivation Menu</h2>
+    <div class="topnav">
+        <a href="#">Link</a>
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+    </div>
+
+    <div class="row">
+        <div class="column" style="background-color: orange; color: antiquewhite;">
+            <h2>Column 1</h2>
+            <p>Lorem ipsum</p>
+        </div>
+        <div class="column" style="background-color:orangered;color: aquamarine;">
+            <h2>Column 2</h2>
+            <p>Lorem ipsum</p>
+        </div>
+        <div class="column" style="background-color: coral;color: beige;">
+            <h2>Column 3</h2>
+            <p>Lorem ipsum</p>
+        </div>
+        <div class="column" style="background-color: dimgrey;color: black;">
+            <h2>Column 4</h2>
+            <p>Lorem ipsum</p>
+        </div>
+    </div>
+
+</body>
+</html>
