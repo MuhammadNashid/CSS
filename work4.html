@@ -20,7 +20,6 @@
         'msg msg msg msg img img'
         'button button button button img img';
         grid-template-rows: 70px 300px 50px 100px;
-        width: 50%;
         background-color: lightblue;
         padding: 10px;
     }
@@ -43,7 +42,7 @@
     }
     .sub{
         background-color: aquamarine;
-        font-size: 30px;
+        font-size: 20px;
         
     }
     .img{
@@ -67,10 +66,30 @@
         padding: 10px;
 
     }
+    .btn1:hover{
+        background-color: black;
+        color: aliceblue;
+    }
     .btn2{
         background-color: lightgreen;
         flex: 50%;
         padding: 10px;
+    }
+    .btn2:hover{
+        background-color: grey;
+    }
+    @media screen and (max-width:800px){
+        .main{
+            grid-template-areas:
+            'head head head head'
+            'nav nav nav nav'
+            'sub sub sub sub'
+            'img img img img'
+            'msg msg msg msg'
+            'button button button button';
+            grid-template-rows:60px 60px 250px 250px 100px 100px;
+         
+        }
     }
     </style>
 </head>
@@ -84,7 +103,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore tenetur reiciendis ab a aut sint consequatur reprehenderit debitis.</p>
         </div>
         <div class="img">
-            <img src="sky-8763986_640.jpg" alt="" width="300px" height="450px">
+            <img src="sky-8763986_640.jpg" alt="" width="530px" height="450px">
         </div>
         <div class="msg">
             <h2>" Lorem ipsum dolor sit amet,"</h2>
